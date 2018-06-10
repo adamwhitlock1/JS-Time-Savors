@@ -1,0 +1,38 @@
+{
+  "name": "time-savors-js",
+  "version": "0.0.1",
+  "description": "A little library for useful JS utilities",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^2.0.7",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --file '*.html, dist/main.js'",
+    "build": "webpack && browser-sync --server --file '*.html, dist/main.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamwhitlock1/JS-Time-Savors.git"
+  },
+  "keywords": [
+    "JS",
+    "lodash",
+    "es6"
+  ],
+  "author": "Adam Whitlock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamwhitlock1/JS-Time-Savors/issues"
+  },
+  "homepage": "https://github.com/adamwhitlock1/JS-Time-Savors#readme"
+}

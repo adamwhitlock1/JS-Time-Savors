@@ -4,15 +4,15 @@ const _ = require('lodash');
 // pure js
 // arrays of numbers or strings (doesn't work for arrays of objects)
 function merge(a1, a2) {
-  var hash = {};
-  var arr = [];
-  for (var i = 0; i < a1.length; i++) {
+  let hash = {};
+  let arr = [];
+  for (let i = 0; i < a1.length; i++) {
     if (hash[a1[i]] !== true) {
       hash[a1[i]] = true;
       arr[arr.length] = a1[i];
     }
   }
-  for (var i = 0; i < a2.length; i++) {
+  for (let i = 0; i < a2.length; i++) {
     if (hash[a2[i]] !== true) {
       hash[a2[i]] = true;
       arr[arr.length] = a2[i];

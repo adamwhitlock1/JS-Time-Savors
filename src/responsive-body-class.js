@@ -1,6 +1,6 @@
 var body = document.body;
 
-var onresize = function(e) {
+var onResize = function(e) {
   //note i need to pass the event as an argument to the function
   var viewportWidth = e.target.outerWidth;
 
@@ -18,5 +18,5 @@ var onresize = function(e) {
   }
 };
 
-checkDevice();
-window.addEventListener("resize", onresize);
+onResize();
+window.addEventListener("resize", onResize);
