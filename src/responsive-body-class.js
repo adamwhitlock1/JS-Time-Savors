@@ -10,11 +10,13 @@ var onResize = function(e) {
   }
 
   if (viewportWidth <= 768 && viewportWidth >  480) {
-    $("body").removeClass("mobile desktop").addClass("tablet");
+    body.classList.remove("mobile", "desktop");
+    body.classList.add("tablet");
   }
 
   if (viewportWidth <= 480) {
-    $("body").removeClass("tablet desktop").addClass("mobile");
+    body.classList.remove("desktop", "tablet");
+    body.classList.add("mobile");
   }
 };
 
