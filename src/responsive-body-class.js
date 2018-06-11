@@ -1,8 +1,8 @@
 var body = document.body;
 
-var onResize = function(e) {
+var onResize = function() {
   //note i need to pass the event as an argument to the function
-  var viewportWidth = e.target.outerWidth;
+  var viewportWidth = window.outerWidth;
 
   if (viewportWidth > 768) {
     body.classList.remove("mobile", "tablet");
@@ -21,4 +21,4 @@ var onResize = function(e) {
 };
 
 onResize();
-window.addEventListener("resize", onResize);
+window.addEventListener("resize", onResize());
